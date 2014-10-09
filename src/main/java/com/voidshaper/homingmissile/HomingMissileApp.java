@@ -1,5 +1,6 @@
-package com.voidshaper.homemissile;
+package com.voidshaper.homingmissile;
 
+import com.voidshaper.homingmissile.infrastructure.rest.RoomsResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -22,7 +23,7 @@ public class HomingMissileApp extends Application<HomingMissileConfig> {
     @Override
     public void run(HomingMissileConfig configuration,
                     Environment environment) {
-        // nothing to do yet
+        environment.jersey().register(new RoomsResource());
     }
 
 }

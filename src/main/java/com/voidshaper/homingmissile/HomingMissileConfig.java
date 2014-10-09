@@ -1,4 +1,4 @@
-package com.voidshaper.homemissile;
+package com.voidshaper.homingmissile;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
